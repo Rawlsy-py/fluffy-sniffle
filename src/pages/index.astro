@@ -1,0 +1,64 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1 class="text-black group-hover:text-gray">Hi 👋</h1>
+			<p>
+				<h2>My name is Chris</h2>
+				<h2>Data Scientist and JavaScript Developer</h2>
+			</p>
+			<article>
+				<p>
+					I was originally trained as a Chartered Legal Executive in
+					England, working in financial services before switching to a
+					career in Software Engineering focused on Machine Learning
+					applications for open banking with Street UK Foundation. I
+					have experience with Python, including data science packages
+					such as Numpy, Pandas, Seaborn, and machine learning with
+					Sci-Kit Learn and Tensorflow.
+				</p>
+				<p>
+					I also have experience with full stack web development using
+					Javascript tech stacks such as PERN, MERN, and Next.JS to
+					build business toolkits such as CRM, lending and
+					Micro-finance Software, and customer portals.
+				</p>
+				<aside>
+					<ul>
+						<li>🌍 I'm based in London, United Kingdom</li>
+						<li>🖥️ See my portfolio at my website.</li>
+						<li>
+							✉️ You can contact me at chris@chrismitchell.xyz
+						</li>
+						<li>📄 See my CV here.</li>
+						<li>
+							🚀 I'm currently working on Integrating
+							Reinforcement Learning into Credit Risk Modelling.
+						</li>
+						<li>
+							🧠 I'm learning Tensorflow and custom neural
+							networks.
+						</li>
+						<li>
+							🤝 I'm open to collaborating on Open Banking
+							payments for micro-finance companies.
+						</li>
+						<li>⚡ I am very into rugby union and cricket.</li>
+					</ul>
+				</aside>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
